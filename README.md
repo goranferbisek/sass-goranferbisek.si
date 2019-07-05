@@ -1,10 +1,9 @@
 #My portfolio page
-This is my portfolio page.
+This is code repository for my portfolio page.
 
-#Run watch Install and run
-
+#Run watch sass watch command
 Requires npm installed.
-Run node-sass wathc command with:
+In order for Sass to watch for changes, run the script below:
 
 ```sh
 npm run sass

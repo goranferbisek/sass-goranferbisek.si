@@ -1,6 +1,22 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Merriweather", serif; }
+
+h1 {
+  color: #2bbc8a; }
+
+.logo {
+  text-align: center; }
+
+.menu a {
+  color: #2bbc8a; }
+
+.menu ul li {
+  display: inline-block; }
+
+.menu ul a {
+  text-decoration: none; }
 
 header,
 #knowledge,
@@ -22,20 +38,3 @@ footer {
   padding: 1em;
   background: #d7d7d7;
   color: #242424; }
-
-h1 {
-  color: #2bbc8a; }
-
-.menu {
-  float: right; }
-  .menu a {
-    color: #2bbc8a; }
-
-.logo {
-  width: 20%; }
-
-.menu ul li {
-  display: inline-block; }
-
-.menu ul a {
-  text-decoration: none; }

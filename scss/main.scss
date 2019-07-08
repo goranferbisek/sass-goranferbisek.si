@@ -8,6 +8,31 @@ $dark-text: #242424;
 body {
   margin: 0;
   padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+.logo {
+  text-align: center;
+}
+
+.menu {
+  a {
+    color: $primary-color;
+  }
+}
+
+.menu ul {
+  //list-style-type: none;
+  li {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 header,
@@ -32,31 +57,4 @@ footer {
   padding: 1em;
   background: $light-bg;
   color: $dark-text;
-}
-
-h1 {
-  color: $primary-color;
-}
-
-.menu {
-  float: right;
-  a {
-    color: $primary-color;
-  }
-}
-
-.logo {
-  width: 20%;
-}
-
-.menu ul {
-  //list-style-type: none;
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    text-decoration: none;
-  }
 }

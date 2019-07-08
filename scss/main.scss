@@ -1,5 +1,62 @@
 $primary-color: #2bbc8a;
+$dark-bg: #313538;
+$light-bg: #d7d7d7;
+
+$light-text: #c9cacc;
+$dark-text: #242424;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+#knowledge,
+#contact,
+footer {
+  margin: 0;
+  padding: 1em;
+  background: $dark-bg;
+  color: $light-text;
+}
+
+footer {
+  border-top: 1px solid $light-text;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+#about,
+#projects {
+  margin: 0;
+  padding: 1em;
+  background: $light-bg;
+  color: $dark-text;
+}
 
 h1 {
   color: $primary-color;
+}
+
+.menu {
+  float: right;
+  a {
+    color: $primary-color;
+  }
+}
+
+.logo {
+  width: 20%;
+}
+
+.menu ul {
+  //list-style-type: none;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }

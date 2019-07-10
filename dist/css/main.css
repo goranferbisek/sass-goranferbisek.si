@@ -20,8 +20,9 @@ h1 {
 
 .portrait-img {
   padding: 0 0.9em 0.9em 0;
-  width: 40%;
-  float: left; }
+  width: 95%;
+  text-align: center;
+  margin: auto; }
 
 header,
 #knowledge,

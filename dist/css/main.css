@@ -1,3 +1,16 @@
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1.2em;
+  top: 1.2em; }
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: #fff;
+  cursor: pointer; }
+
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +20,11 @@ h1 {
   color: #2bbc8a; }
 
 .logo {
-  text-align: center; }
+  text-align: left; }
+  .logo h1 {
+    font-size: 1.2em; }
+  .logo h2 {
+    font-size: 0.8em; }
 
 .menu a {
   color: #2bbc8a; }
@@ -19,8 +36,8 @@ h1 {
   text-decoration: none; }
 
 .portrait-img {
-  padding: 0 0.9em 0.9em 0;
-  width: 95%;
+  display: block;
+  width: 80%;
   text-align: center;
   margin: auto; }
 

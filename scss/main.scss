@@ -1,3 +1,5 @@
+@import "menu";
+
 $primary-color: #2bbc8a;
 $dark-bg: #313538;
 $light-bg: #d7d7d7;
@@ -16,7 +18,13 @@ h1 {
 }
 
 .logo {
-  text-align: center;
+  text-align: left;
+  h1 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 0.8em;
+  }
 }
 
 .menu {
@@ -36,8 +44,9 @@ h1 {
 }
 
 .portrait-img {
-  padding: 0 0.9em 0.9em 0;
-  width: 95%;
+  //padding: 0 0.9em 0.9em 0;
+  display: block;
+  width: 80%;
   text-align: center;
   margin: auto;
   //do not float on mobile

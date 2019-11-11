@@ -1,8 +1,26 @@
-.menu-btn {
+.btn-menu {
   position: absolute;
   z-index: 1;
   right: 1.2em;
   top: 1.2em;
+  //border-right: 5px solid blue;
+
+  &.close {
+    transform: rotate(180deg);
+    @include easeOut;
+
+    /*.btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      } //hide center line
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }*/
+  }
 }
 
 .btn-line {

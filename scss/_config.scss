@@ -8,3 +8,9 @@ $dark-text: #242424;
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+@mixin tablet-portrait {
+  @media screen and (min-width: 801px) and (max-width: 1170px) {
+    @content;
+  }
+}

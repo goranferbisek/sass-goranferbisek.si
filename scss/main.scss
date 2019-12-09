@@ -11,17 +11,47 @@ h1 {
   color: $primary-color;
 }
 
+header {
+  height: 100vh;
+  padding-top: 0.5em;
+  background: $dark-bg;
+  color: $light-text;
+}
+
 .logo {
-  text-align: left;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  background: $dark-bg url(../img/close-up-code.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  z-index: 20;
+
   h1 {
-    font-size: 1.2em;
+    padding-top: 30vh;
+    font-size: 2.4em;
   }
   h2 {
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 }
 
+/* logo overlay */
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(90, 90, 90, 0.8);
+  z-index: 1;
+}
+
 .menu {
+  ul {
+    text-align: center;
+  }
   a {
     color: $primary-color;
   }
@@ -38,16 +68,12 @@ h1 {
 }
 
 .portrait-img {
-  //padding: 0 0.9em 0.9em 0;
   display: block;
-  width: 80%;
+  width: 250px;
   text-align: center;
   margin: auto;
-  //do not float on mobile
-  //float: left;
 }
 
-header,
 #knowledge,
 #contact,
 footer {
@@ -70,3 +96,9 @@ footer {
   background: $light-bg;
   color: $dark-text;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import "viewport/mobile";

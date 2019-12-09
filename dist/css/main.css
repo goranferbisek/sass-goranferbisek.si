@@ -2,7 +2,8 @@
   position: absolute;
   z-index: 1;
   right: 1.2em;
-  top: 1.2em; }
+  top: 1.2em;
+  display: none; }
   .btn-menu.close {
     transform: rotate(180deg);
     transition: all 0.5s ease-out;
@@ -33,12 +34,39 @@ body {
 h1 {
   color: #2bbc8a; }
 
+header {
+  height: 100vh;
+  padding-top: 0.5em;
+  background: #313538;
+  color: #c9cacc; }
+
 .logo {
-  text-align: left; }
+  margin: 0;
+  text-align: center;
+  position: relative;
+  background: #313538 url(../img/close-up-code.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  z-index: 20; }
   .logo h1 {
-    font-size: 1.2em; }
+    padding-top: 30vh;
+    font-size: 2.4em; }
   .logo h2 {
-    font-size: 0.8em; }
+    font-size: 1.2em; }
+
+/* logo overlay */
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(90, 90, 90, 0.8);
+  z-index: 1; }
+
+.menu ul {
+  text-align: center; }
 
 .menu a {
   color: #2bbc8a; }
@@ -51,11 +79,10 @@ h1 {
 
 .portrait-img {
   display: block;
-  width: 80%;
+  width: 250px;
   text-align: center;
   margin: auto; }
 
-header,
 #knowledge,
 #contact,
 footer {
@@ -75,3 +102,10 @@ footer {
   padding: 1em;
   background: #d7d7d7;
   color: #242424; }
+
+html {
+  scroll-behavior: smooth; }
+
+@media screen and (min-width: 801px) and (max-width: 1170px) {
+  .btn-menu {
+    display: block; } }

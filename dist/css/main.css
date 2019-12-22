@@ -1,8 +1,5 @@
-.navbar {
+nav {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
   background: #313538;
   color: #c9cacc; }
 
@@ -10,29 +7,29 @@
   font-size: 1.5rem;
   margin: 0.5rem; }
 
-.navbar-links {
+.nav-links {
   position: absolute;
   background-color: #313538;
   width: 100%;
   z-index: 10;
   transform: translateY(-100%);
   transition: transform ease 500ms; }
-  .navbar-links ul {
+  .nav-links ul {
     margin: 1em;
     padding: 0;
     padding-top: 2rem;
     list-style: none;
     display: flex;
     flex-direction: column; }
-  .navbar-links li {
+  .nav-links li {
     text-align: center; }
-    .navbar-links li a {
+    .nav-links li a {
       text-decoration: none;
       color: #2bbc8a;
       padding: 1rem;
       display: block; }
 
-.nav-open .navbar-links {
+.nav-open .nav-links {
   transform: translateX(0); }
 
 .menu-button {
@@ -53,7 +50,7 @@
 
 /*
 @media screen and (min-width: 768px) {
-  .navbar-links ul {
+  .nav-links ul {
     display: flex;
     flex-direction: row;
   }
@@ -84,7 +81,7 @@ h1 {
 header {
   height: 100vh; }
 
-.logo {
+.intro {
   margin: 0;
   text-align: center;
   position: relative;
@@ -92,15 +89,17 @@ header {
   background-size: cover;
   height: 100%;
   z-index: 1; }
-  .logo h1 {
+  .intro h1 {
     padding-top: 30vh;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 2.4em; }
-  .logo h2 {
+  .intro h2 {
     font-size: 1.2em;
     color: #c9cacc; }
 
-/* logo overlay */
-.logo::after {
+/* background image overlay */
+.intro::after {
   content: "";
   position: absolute;
   top: 0;

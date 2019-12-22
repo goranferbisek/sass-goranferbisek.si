@@ -19,7 +19,7 @@ header {
   height: 100vh;
 }
 
-.logo {
+.intro {
   margin: 0;
   text-align: center;
   position: relative;
@@ -30,6 +30,8 @@ header {
 
   h1 {
     padding-top: 30vh;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 2.4em;
   }
   h2 {
@@ -38,8 +40,8 @@ header {
   }
 }
 
-/* logo overlay */
-.logo::after {
+/* background image overlay */
+.intro::after {
   content: "";
   position: absolute;
   top: 0;

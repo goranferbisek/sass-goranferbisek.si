@@ -1,8 +1,8 @@
-.navbar {
+nav {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  //flex-direction: column;
+  //justify-content: space-between;
+  //align-items: flex-start;
   background: $dark-bg;
   color: $light-text;
 }
@@ -12,7 +12,7 @@
   margin: 0.5rem;
 }
 
-.navbar-links {
+.nav-links {
   position: absolute;
   background-color: $dark-bg;
   width: 100%;
@@ -42,7 +42,7 @@
 }
 
 .nav-open {
-  .navbar-links {
+  .nav-links {
     transform: translateX(0);
   }
 }
@@ -68,7 +68,7 @@
 
 /*
 @media screen and (min-width: 768px) {
-  .navbar-links ul {
+  .nav-links ul {
     display: flex;
     flex-direction: row;
   }

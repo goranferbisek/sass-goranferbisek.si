@@ -1,19 +1,10 @@
-const menuBtn = document.querySelector(".btn-menu");
-const menu = document.querySelector(".menu");
+const navToggle = document.querySelector(".menu-button");
+const nav = document.querySelector(".navbar-links");
 
-let showMenu = false;
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
+});
 
-//toggle button callback
-menuBtn.addEventListener("click", () => {
-  if (!showMenu) {
-    menuBtn.classList.add("close");
-    menu.classList.add("show");
-
-    showMenu = true;
-  } else {
-    menuBtn.classList.remove("close");
-    menu.classList.remove("show");
-
-    showMenu = false;
-  }
+nav.addEventListener("click", () => {
+  document.body.classList.remove("nav-open");
 });

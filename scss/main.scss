@@ -1,6 +1,10 @@
 @import "config";
 @import "menu";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,9 +17,6 @@ h1 {
 
 header {
   height: 100vh;
-  padding-top: 0.5em;
-  background: $dark-bg;
-  color: $light-text;
 }
 
 .logo {
@@ -33,6 +34,7 @@ header {
   }
   h2 {
     font-size: 1.2em;
+    color: $light-text;
   }
 }
 
@@ -46,25 +48,6 @@ header {
   height: 100%;
   background: rgba(50, 50, 50, 0.8);
   z-index: -1;
-}
-
-.menu {
-  ul {
-    text-align: center;
-  }
-  a {
-    color: $primary-color;
-  }
-}
-
-.menu ul {
-  //list-style-type: none;
-  li {
-    display: inline-block;
-  }
-  a {
-    text-decoration: none;
-  }
 }
 
 .portrait-img {
@@ -95,10 +78,6 @@ footer {
   padding: 1em;
   background: $light-bg;
   color: $dark-text;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 @import "viewport/mobile";

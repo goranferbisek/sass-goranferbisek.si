@@ -1,6 +1,7 @@
 {
   "name": "my-site",
   "version": "1.0.0",
+  "private": true,
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {

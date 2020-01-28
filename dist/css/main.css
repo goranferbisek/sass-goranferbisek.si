@@ -69,13 +69,18 @@ nav {
 */
 .top-button {
   position: fixed;
+  display: none;
+  font-weight: 600;
   width: 3em;
   height: 3em;
   right: 1.5em;
   bottom: 1.5em;
   background-color: #2bbc8a;
   border: none;
+  border-radius: 10px;
   z-index: 10; }
+  .top-button:hover {
+    background-color: #45d5a3; }
 
 html {
   scroll-behavior: smooth; }

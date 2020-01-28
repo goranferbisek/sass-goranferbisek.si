@@ -5,12 +5,30 @@ $light-bg: #d7d7d7;
 $light-text: #c9cacc;
 $dark-text: #242424;
 
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1336px;
+$breakpoint-desktop: 1680px;
+
+/***** Mixins *****/
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
-@mixin tablet-portrait {
-  @media screen and (min-width: 801px) and (max-width: 1170px) {
+/* Media Queries */
+@mixin tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: $breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
     @content;
   }
 }

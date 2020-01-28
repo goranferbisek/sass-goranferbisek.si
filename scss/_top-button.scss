@@ -1,0 +1,10 @@
+.top-button {
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    right: 1.5em;
+    bottom: 1.5em;
+    background-color: $primary-color;
+    border: none;
+    z-index: 10;
+}

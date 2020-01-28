@@ -67,6 +67,16 @@ nav {
   }
 }
 */
+.top-button {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  right: 1.5em;
+  bottom: 1.5em;
+  background-color: #2bbc8a;
+  border: none;
+  z-index: 10; }
+
 html {
   scroll-behavior: smooth; }
 

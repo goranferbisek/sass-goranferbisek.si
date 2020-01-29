@@ -13,6 +13,11 @@ nav {
 }
 
 .nav-links {
+  /* hides unwanted animation on load
+     but now there is no transition on close
+   */
+  opacity: 0;
+
   position: absolute;
   background-color: $dark-bg;
   width: 100%;
@@ -43,6 +48,7 @@ nav {
 
 .nav-open {
   .nav-links {
+    opacity: 1;
     transform: translateX(0);
   }
 }

@@ -10,6 +10,10 @@ nav {
   margin: 0.5rem; }
 
 .nav-links {
+  /* hides unwanted animation on load
+     but now there is no transition on close
+   */
+  opacity: 0;
   position: absolute;
   background-color: #313538;
   width: 100%;
@@ -32,6 +36,7 @@ nav {
       display: block; }
 
 .nav-open .nav-links {
+  opacity: 1;
   transform: translateX(0); }
 
 .menu-button {

@@ -1,13 +1,8 @@
 /***** Mixins *****/
 /* Media Queries */
 nav {
-  display: flex;
   background: #313538;
   color: #c9cacc; }
-
-.brand-title {
-  font-size: 1.5rem;
-  margin: 0.5rem; }
 
 .nav-links {
   /* hides unwanted animation on load
@@ -55,25 +50,24 @@ nav {
     width: 100%;
     background-color: #c9cacc; }
 
-/*
 @media screen and (min-width: 768px) {
+  .menu-button {
+    display: none; }
+  /*
   .nav-links ul {
     display: flex;
     flex-direction: row;
   }
 
-  .menu-button {
-    display: none;
-  }
+  
 
-  .navbar {
+  .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-}
-*/
+  } */ }
+
 .top-button {
   position: fixed;
   display: none;

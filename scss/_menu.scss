@@ -1,15 +1,6 @@
 nav {
-  display: flex;
-  //flex-direction: column;
-  //justify-content: space-between;
-  //align-items: flex-start;
   background: $dark-bg;
   color: $light-text;
-}
-
-.brand-title {
-  font-size: 1.5rem;
-  margin: 0.5rem;
 }
 
 .nav-links {
@@ -72,22 +63,25 @@ nav {
   }
 }
 
-/*
-@media screen and (min-width: 768px) {
+
+@include tablet {
+  .menu-button {
+    display: none;
+  }
+  
+  /*
   .nav-links ul {
     display: flex;
     flex-direction: row;
   }
 
-  .menu-button {
-    display: none;
-  }
+  
 
-  .navbar {
+  .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 }
-*/
+

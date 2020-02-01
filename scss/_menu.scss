@@ -1,5 +1,5 @@
 nav {
-  background: $dark-bg;
+  background-color: $dark-bg;
   color: $light-text;
 }
 
@@ -68,20 +68,18 @@ nav {
   .menu-button {
     display: none;
   }
-  
-  /*
-  .nav-links ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  
 
   .nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */
+    opacity: 1;
+    transform: translateY(0);
+    background-color: transparent;
+    
+    ul {
+      padding-top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
 }
 

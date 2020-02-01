@@ -1,7 +1,7 @@
 /***** Mixins *****/
 /* Media Queries */
 nav {
-  background: #313538;
+  background-color: #313538;
   color: #c9cacc; }
 
 .nav-links {
@@ -53,20 +53,15 @@ nav {
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none; }
-  /*
-  .nav-links ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  
-
   .nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  } */ }
+    opacity: 1;
+    transform: translateY(0);
+    background-color: transparent; }
+    .nav-links ul {
+      padding-top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; } }
 
 .top-button {
   position: fixed;

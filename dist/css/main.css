@@ -158,3 +158,7 @@ footer {
     min-width: 33%; }
   .about-description {
     padding: 0 1em; } }
+
+@media screen and (min-width: 1336px) {
+  section {
+    padding: 2em 5em; } }

@@ -101,3 +101,9 @@ footer {
     padding: 0 1em;
   }
 }
+
+@include laptop {
+  section {
+    padding: 2em 5em;
+  }
+}

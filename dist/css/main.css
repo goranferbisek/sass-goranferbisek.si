@@ -124,26 +124,37 @@ header {
 
 .portrait-img {
   display: block;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   text-align: center;
   margin: auto; }
 
-#knowledge,
-#contact,
-footer {
+section {
   margin: 0;
-  padding: 1em;
+  padding: 1em; }
+
+.dark-section {
   background: #313538;
   color: #c9cacc; }
+
+.light-section {
+  background: #d7d7d7;
+  color: #242424; }
 
 footer {
   border-top: 1px solid #c9cacc;
   font-size: 0.9em;
   text-align: center; }
 
-#about,
-#projects {
-  margin: 0;
-  padding: 1em;
-  background: #d7d7d7;
-  color: #242424; }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row; }
+  .about-image {
+    min-width: 33%; }
+  .about-description {
+    padding: 0 1em; } }

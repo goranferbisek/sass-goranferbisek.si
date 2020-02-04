@@ -55,18 +55,25 @@ header {
 
 .portrait-img {
   display: block;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   text-align: center;
   margin: auto;
 }
 
-#knowledge,
-#contact,
-footer {
+section {
   margin: 0;
   padding: 1em;
+}
+
+.dark-section {
   background: $dark-bg;
   color: $light-text;
+}
+
+.light-section {
+  background: $light-bg;
+  color: $dark-text;
 }
 
 footer {
@@ -75,10 +82,22 @@ footer {
   text-align: center;
 }
 
-#about,
-#projects {
-  margin: 0;
-  padding: 1em;
-  background: $light-bg;
-  color: $dark-text;
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@include tablet {
+  .about-container {
+    flex-direction: row;
+  }
+
+  .about-image {
+    min-width: 33%;
+  }
+
+  .about-description {
+    padding: 0 1em;
+  }
 }

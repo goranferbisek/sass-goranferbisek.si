@@ -157,7 +157,10 @@ footer {
   .about-image {
     min-width: 33%; }
   .about-description {
-    padding: 0 1em; } }
+    padding: 0 1em; }
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-evenly; } }
 
 @media screen and (min-width: 1336px) {
   section {

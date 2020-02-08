@@ -78,8 +78,26 @@ section {
 
 footer {
   border-top: 1px solid $light-text;
-  font-size: 0.9em;
+  padding: 1em;
   text-align: center;
+}
+
+.social-links {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.social-link {
+  img {
+    margin-right: 0.5em;
+    height: 1.2em;
+  }
+
+  a {
+    color: $light-text;
+    text-decoration: none;
+  }
+
 }
 
 .about-container {

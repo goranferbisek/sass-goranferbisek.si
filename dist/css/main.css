@@ -143,8 +143,20 @@ section {
 
 footer {
   border-top: 1px solid #c9cacc;
-  font-size: 0.9em;
+  padding: 1em;
   text-align: center; }
+
+.social-links {
+  font-size: 1.2em;
+  margin: 1em 0; }
+
+.social-link img {
+  margin-right: 0.5em;
+  height: 1.2em; }
+
+.social-link a {
+  color: #c9cacc;
+  text-decoration: none; }
 
 .about-container {
   display: flex;

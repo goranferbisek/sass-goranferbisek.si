@@ -63,11 +63,7 @@ header {
 
 section {
   margin: 0;
-  padding: 1em;
-
-  @include laptop {
-    padding: 2em 5em;
-  }
+  padding: 1em 0;
 }
 
 .dark-section {
@@ -84,6 +80,22 @@ footer {
   border-top: 1px solid $light-text;
   padding: 1em;
   text-align: center;
+}
+
+.container {
+  margin: 0 4%;
+
+  @include tablet {
+    margin: 0 8%;
+  }
+
+  @include laptop {
+    margin: 0 12%;
+  }
+
+  @include desktop {
+    margin: 0 20%;
+  }
 }
 
 .social-links {

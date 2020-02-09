@@ -64,6 +64,10 @@ header {
 section {
   margin: 0;
   padding: 1em;
+
+  @include laptop {
+    padding: 2em 5em;
+  }
 }
 
 .dark-section {
@@ -104,13 +108,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 @include tablet {
-  .about-container {
-    flex-direction: row;
-  }
-
   .about-image {
     min-width: 33%;
   }
@@ -122,11 +126,5 @@ footer {
   .flex-wrapper {
     display: flex;
     justify-content: space-evenly;
-  }
-}
-
-@include laptop {
-  section {
-    padding: 2em 5em;
   }
 }

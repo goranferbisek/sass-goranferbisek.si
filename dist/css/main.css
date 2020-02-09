@@ -132,6 +132,9 @@ header {
 section {
   margin: 0;
   padding: 1em; }
+  @media screen and (min-width: 1336px) {
+    section {
+      padding: 2em 5em; } }
 
 .dark-section {
   background: #313538;
@@ -162,10 +165,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media screen and (min-width: 768px) {
+    .about-container {
+      flex-direction: row; } }
 
 @media screen and (min-width: 768px) {
-  .about-container {
-    flex-direction: row; }
   .about-image {
     min-width: 33%; }
   .about-description {
@@ -173,7 +177,3 @@ footer {
   .flex-wrapper {
     display: flex;
     justify-content: space-evenly; } }
-
-@media screen and (min-width: 1336px) {
-  section {
-    padding: 2em 5em; } }

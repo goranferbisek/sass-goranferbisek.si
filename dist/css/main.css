@@ -80,6 +80,11 @@ nav {
   .top-button:hover {
     background-color: #45d5a3; }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto; }
+
 html {
   scroll-behavior: smooth; }
 

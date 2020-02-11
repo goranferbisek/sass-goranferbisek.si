@@ -80,11 +80,16 @@ nav {
   .top-button:hover {
     background-color: #45d5a3; }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em; }
+
 .project {
-  border: 1px solid #242424;
   display: flex;
   flex-direction: column;
-  margin: 1em auto; }
+  padding: 0.8em;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5); }
 
 html {
   scroll-behavior: smooth; }

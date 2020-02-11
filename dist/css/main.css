@@ -81,6 +81,7 @@ nav {
     background-color: #45d5a3; }
 
 .project {
+  border: 1px solid #242424;
   display: flex;
   flex-direction: column;
   margin: 1em auto; }

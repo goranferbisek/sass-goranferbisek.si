@@ -37,8 +37,8 @@ nav {
 .menu-button {
   position: absolute;
   cursor: pointer;
-  top: 0.75rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
   width: 30px;
   height: 21px;
   display: flex;

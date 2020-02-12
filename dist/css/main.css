@@ -94,6 +94,22 @@ nav {
   padding: 0.8em;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5); }
 
+.project-links {
+  display: flex;
+  justify-content: center; }
+
+.button {
+  margin: 0 0.5em;
+  background-color: #313538;
+  color: #c9cacc;
+  text-decoration: none;
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  border-radius: 5px; }
+  .button:hover {
+    background-color: #2bbc8a;
+    color: #242424; }
+
 html {
   scroll-behavior: smooth; }
 

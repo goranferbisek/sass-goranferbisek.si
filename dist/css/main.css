@@ -184,15 +184,18 @@ footer {
 
 .social-links {
   font-size: 1.2em;
-  margin: 1em 0; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
-.social-link img {
-  margin-right: 0.5em;
-  height: 1.2em; }
-
-.social-link a {
-  color: #c9cacc;
-  text-decoration: none; }
+.social-link {
+  margin: 0.5em; }
+  .social-link img {
+    margin-right: 0.5em;
+    height: 1.2em; }
+  .social-link a {
+    color: #c9cacc;
+    text-decoration: none; }
 
 .about-container {
   display: flex;

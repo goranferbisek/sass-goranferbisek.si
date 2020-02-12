@@ -109,6 +109,10 @@ nav {
   .button:hover {
     background-color: #2bbc8a;
     color: #242424; }
+  .button.not-available {
+    background-color: #c9cacc;
+    color: #242424;
+    border: 1px solid #242424; }
 
 html {
   scroll-behavior: smooth; }

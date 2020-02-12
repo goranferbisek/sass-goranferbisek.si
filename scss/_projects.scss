@@ -33,4 +33,10 @@
         background-color: $primary-color;
         color: $dark-text;
     }
+
+    &.not-available {
+        background-color: $light-text;
+        color: $dark-text;
+        border: 1px solid $dark-text;
+    }
 }

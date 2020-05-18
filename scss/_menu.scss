@@ -3,6 +3,10 @@ nav {
   color: $light-text;
 }
 
+.logo img {
+  height: 2.5em;
+}
+
 .nav-links {
   /* hides unwanted animation on load
      but now there is no transition on close

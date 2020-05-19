@@ -2,7 +2,14 @@
 /* Media Queries */
 nav {
   background-color: #313538;
-  color: #c9cacc; }
+  color: #c9cacc;
+  position: relative;
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1; }
 
 .logo img {
   height: 2.5em; }
@@ -14,6 +21,8 @@ nav {
   opacity: 0;
   position: absolute;
   background-color: #313538;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
   transform: translateY(-100%);
@@ -37,30 +46,19 @@ nav {
   transform: translateX(0); }
 
 .menu-button {
-  position: absolute;
   cursor: pointer;
-  top: 1.5rem;
-  right: 1.5rem;
   width: 30px;
   height: 21px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 20; }
+  z-index: 1; }
   .menu-button .btn-line {
     height: 3px;
     width: 100%;
     background-color: #c9cacc; }
 
 @media screen and (min-width: 768px) {
-  nav {
-    position: relative;
-    background-color: transparent;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1; }
   .menu-button {
     display: none; }
   .nav-links {

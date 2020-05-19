@@ -1,6 +1,15 @@
 nav {
   background-color: $dark-bg;
   color: $light-text;
+
+  position: relative;
+  background-color: transparent;
+
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
 }
 
 .logo img {
@@ -15,6 +24,8 @@ nav {
 
   position: absolute;
   background-color: $dark-bg;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1;
 
@@ -46,16 +57,13 @@ nav {
 }
 
 .menu-button {
-  position: absolute;
   cursor: pointer;
-  top: 1.5rem;
-  right: 1.5rem;
   width: 30px;
   height: 21px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 1;
 
   .btn-line {
     height: 3px;
@@ -66,18 +74,6 @@ nav {
 
 
 @include tablet {
-
-  nav {
-    position: relative;
-    background-color: transparent;
-
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    //padding-top: 1.5em;
-    z-index: 1;
-  }
 
   .menu-button {
     display: none;

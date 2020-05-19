@@ -16,19 +16,16 @@ nav {
   position: absolute;
   background-color: $dark-bg;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 
   transform: translateY(-100%);
   transition: transform ease 500ms;
-
-  ul {
-    margin: 1em;
-    padding: 0;
-    padding-top: 2rem;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
+  margin: 1em;
+  padding: 0;
+  padding-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 
   li {
     text-align: center;
@@ -69,24 +66,36 @@ nav {
 
 
 @include tablet {
+
+  nav {
+    position: relative;
+    background-color: transparent;
+
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //padding-top: 1.5em;
+    z-index: 1;
+  }
+
   .menu-button {
     display: none;
   }
 
   .nav-links {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    justify-content: flex-end;
     opacity: 1;
     transform: translateY(0);
     background-color: transparent;
+    list-style: none;
 
-    ul {
-      padding-top: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-
-      li a:hover {
-        text-decoration: underline;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   }
 }

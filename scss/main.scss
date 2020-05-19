@@ -62,6 +62,7 @@ h1 {
 }
 
 header {
+  position: relative;
   height: 100vh;
   background: $dark-bg url(../img/computer-close-up.jpg) no-repeat center;
   background-size: cover;
@@ -70,12 +71,10 @@ header {
 .intro {
   text-align: center;
   position: relative;
-  height: 100%;
+  z-index: 1;
 
   h1 {
-    padding-top: 30vh;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 30vh;
     font-size: 2.4em;
   }
   h2 {

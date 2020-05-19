@@ -173,7 +173,16 @@ header {
   position: relative;
   height: 100vh;
   background: #313538 url(../img/computer-close-up.jpg) no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  /* background image overlay */ }
+  header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); }
 
 .intro {
   text-align: center;
@@ -185,16 +194,6 @@ header {
   .intro h2 {
     font-size: 1.2em;
     color: #c9cacc; }
-
-/* background image overlay */
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7); }
 
 .portrait-img {
   display: block;

@@ -66,6 +66,17 @@ header {
   height: 100vh;
   background: $dark-bg url(../img/computer-close-up.jpg) no-repeat center;
   background-size: cover;
+
+  /* background image overlay */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
 
 .intro {
@@ -83,16 +94,6 @@ header {
   }
 }
 
-/* background image overlay */
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-}
 
 .portrait-img {
   display: block;

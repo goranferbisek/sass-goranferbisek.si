@@ -88,15 +88,6 @@ header {
   }
 }
 
-
-.portrait-img {
-  display: block;
-  width: 100%;
-  max-width: 250px;
-  text-align: center;
-  margin: auto;
-}
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -107,26 +98,37 @@ header {
   }
 }
 
+.portrait-img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+}
+
+
 @include tablet {
   .about-image {
-    min-width: 33%;
+    min-width: 30%;
   }
 
   .about-description {
-    padding: 0 1em;
+    padding: 0 2em;
+
+    p {
+      margin-top: 0;
+    }
   }
 
   .flex-wrapper {
     display: flex;
-    justify-content: space-evenly;
+
+    div {
+      width: 50%;
+    }
   }
 }
 
-.contacts {
-  margin: 2em 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.contact-element {
+  margin-bottom: 1em;
 }
 
 footer {

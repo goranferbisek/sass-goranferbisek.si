@@ -1,8 +1,7 @@
 nav {
+  position: relative;
   background-color: $dark-bg;
   color: $light-text;
-
-  position: relative;
   background-color: transparent;
 
   height: 60px;
@@ -21,7 +20,6 @@ nav {
      but now there is no transition on close
    */
   opacity: 0;
-
   position: absolute;
   background-color: $dark-bg;
   top: 0;
@@ -34,12 +32,13 @@ nav {
   margin: 1em;
   padding: 0;
   padding-top: 2rem;
-  list-style: none;
   display: flex;
   flex-direction: column;
 
   li {
     text-align: center;
+    list-style: none;
+
     a {
       text-decoration: none;
       color: $primary-color;
@@ -80,15 +79,15 @@ nav {
   }
 
   .nav-links {
+    position: relative;
     margin: 0;
     display: flex;
     flex-direction: row;
-    //align-items: center;
+    align-items: center;
     justify-content: flex-end;
     opacity: 1;
     transform: translateY(0);
     background-color: transparent;
-    list-style: none;
 
     a:hover {
       text-decoration: underline;

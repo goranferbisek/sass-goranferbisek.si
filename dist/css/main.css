@@ -46,7 +46,11 @@ nav {
 
 .nav-open .nav-links {
   opacity: 1;
-  transform: translateX(0); }
+  transform: translateX(0);
+  margin: 0; }
+
+.nav-open nav .container {
+  margin: 0 -4%; }
 
 .menu-button {
   cursor: pointer;

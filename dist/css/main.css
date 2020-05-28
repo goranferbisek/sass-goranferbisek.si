@@ -2,7 +2,7 @@
 /* Media Queries */
 nav {
   position: relative;
-  margin: auto;
+  margin: auto 1em;
   padding-top: 1em;
   background-color: #313538;
   color: #c9cacc;
@@ -10,7 +10,7 @@ nav {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1; }
 
 .logo img {
@@ -48,9 +48,6 @@ nav {
   opacity: 1;
   transform: translateX(0);
   margin: 0; }
-
-.nav-open nav .container {
-  margin: 0 -4%; }
 
 .menu-button {
   cursor: pointer;

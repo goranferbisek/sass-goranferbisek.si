@@ -1,0 +1,36 @@
+footer {
+  background-color: $dark-bg;
+  color: $light-text;
+  padding: 1em;
+  text-align: center;
+}
+
+.social-links {
+  font-size: 1.2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  svg {
+    width: 1em;
+  }
+}
+
+.social-link {
+  margin: 0.5em;
+
+  img {
+    margin-right: 0.5em;
+    height: 1.2em;
+  }
+
+  a {
+    color: $light-text;
+    text-decoration: none;
+  }
+}
+
+.svg-icon {
+    fill: $accent-copper;
+}

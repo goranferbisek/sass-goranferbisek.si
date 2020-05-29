@@ -150,6 +150,32 @@ nav {
     color: #242424;
     border: 1px solid #242424; }
 
+footer {
+  background-color: #313538;
+  color: #c9cacc;
+  padding: 1em;
+  text-align: center; }
+
+.social-links {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .social-links svg {
+    width: 1em; }
+
+.social-link {
+  margin: 0.5em; }
+  .social-link img {
+    margin-right: 0.5em;
+    height: 1.2em; }
+  .social-link a {
+    color: #c9cacc;
+    text-decoration: none; }
+
+.svg-icon {
+  fill: #C77762; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -243,24 +269,3 @@ header {
 
 .contact-element {
   margin-bottom: 1em; }
-
-footer {
-  background-color: #313538;
-  color: #c9cacc;
-  padding: 1em;
-  text-align: center; }
-
-.social-links {
-  font-size: 1.2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.social-link {
-  margin: 0.5em; }
-  .social-link img {
-    margin-right: 0.5em;
-    height: 1.2em; }
-  .social-link a {
-    color: #c9cacc;
-    text-decoration: none; }

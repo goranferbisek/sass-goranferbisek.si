@@ -47,7 +47,7 @@ nav {
     a {
       text-decoration: none;
       color: $primary-color;
-      padding: 1rem;
+      padding: 1.6rem;
       display: block;
     }
   }
@@ -85,6 +85,7 @@ nav {
     width: 84%;
     margin: auto;
     padding-top: 2em;
+    align-items: center;
   }
 
   .menu-button {
@@ -107,6 +108,13 @@ nav {
     opacity: 1;
     transform: translateY(0);
     background-color: transparent;
+
+    li {
+      a {
+        display: inline;
+        padding: 0em;
+      }
+    }
 
     a:hover {
       text-decoration: underline;

@@ -43,7 +43,7 @@ nav {
     .nav-links li a {
       text-decoration: none;
       color: #59B3AA;
-      padding: 1rem;
+      padding: 1.6rem;
       display: block; }
 
 .nav-open .nav-links {
@@ -69,7 +69,8 @@ nav {
   nav {
     width: 84%;
     margin: auto;
-    padding-top: 2em; }
+    padding-top: 2em;
+    align-items: center; }
   .menu-button {
     display: none; }
   .logo img {
@@ -85,6 +86,9 @@ nav {
     opacity: 1;
     transform: translateY(0);
     background-color: transparent; }
+    .nav-links li a {
+      display: inline;
+      padding: 0em; }
     .nav-links a:hover {
       text-decoration: underline; } }
 

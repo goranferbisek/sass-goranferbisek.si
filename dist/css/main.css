@@ -181,6 +181,14 @@ footer {
 .svg-icon {
   fill: #C77762; }
 
+@media screen and (min-width: 1336px) {
+  .tools {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+    .tools div {
+      width: 49%; } }
+
 html {
   scroll-behavior: smooth; }
 
@@ -270,11 +278,7 @@ header {
   .about-description {
     padding: 0 2em; }
     .about-description p {
-      margin-top: 0; }
-  .flex-wrapper {
-    display: flex; }
-    .flex-wrapper div {
-      width: 50%; } }
+      margin-top: 0; } }
 
 .contact-element {
   margin-bottom: 1em; }

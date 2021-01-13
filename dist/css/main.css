@@ -227,7 +227,11 @@ section {
   padding: 1em 0; }
 
 h1 {
-  color: #59B3AA; }
+  color: #59B3AA;
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
 
 header {
   position: relative;

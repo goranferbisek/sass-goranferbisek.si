@@ -258,7 +258,11 @@ header {
 .portrait-img {
   display: block;
   width: 100%;
-  max-width: 250px; }
+  max-width: 250px;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .portrait-img {
+      margin: 0; } }
 
 @media screen and (min-width: 768px) {
   .about-image {

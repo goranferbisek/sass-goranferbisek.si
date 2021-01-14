@@ -1,0 +1,40 @@
+/* font scale used from https://type-scale.com/
+   used scale is 1.333 Perfect Fourth
+*/
+
+body {
+    line-height: 1.5em;
+
+    @include laptop {
+        line-height: 1.75em;
+    }
+}
+
+.intro {
+    @include laptop {
+        h1 {
+            font-size: 3.157em;
+        }
+
+        h2 {
+            font-size: 1.33em;
+        }
+    }
+}
+
+h1 {
+  color: $primary-color;
+  font-size: 2.369em;
+}
+
+h2 {
+  font-size: 1.777em;
+}
+
+h3 {
+  font-size: 1.333em;
+}
+
+nav li {
+    font-weight:bold;
+}

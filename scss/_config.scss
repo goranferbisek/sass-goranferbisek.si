@@ -7,10 +7,11 @@ $alt-blue: #5A95A4;
 $light-text: #c9cacc;
 $dark-text: #242424;
 
-$base-font-size: 1em;
+$base-font-size-mobile: 16px;
+$base-font-size-desktop: 18px;
 
 $breakpoint-tablet: 768px;
-$breakpoint-laptop: 1336px;
+$breakpoint-laptop: 1024px;
 $breakpoint-desktop: 1680px;
 
 /***** Mixins *****/

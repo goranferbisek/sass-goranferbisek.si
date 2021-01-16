@@ -11,6 +11,13 @@ body {
 }
 
 .intro {
+    h1 {
+        margin-bottom: 0.8em;
+    }
+    h2 {
+        line-height: 1.2em;
+    }
+
     @include laptop {
         h1 {
             font-size: 3.157em;
@@ -18,17 +25,18 @@ body {
 
         h2 {
             font-size: 1.33em;
+            line-height: 2.5em;
         }
     }
 }
 
 h1 {
-  color: $primary-color;
-  font-size: 2.369em;
+    font-size: 2.369em;
 }
 
 h2 {
-  font-size: 1.777em;
+    color: $primary-color;
+    font-size: 1.777em;
 }
 
 h3 {

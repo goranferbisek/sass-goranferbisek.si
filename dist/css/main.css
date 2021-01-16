@@ -198,17 +198,24 @@ body {
     body {
       line-height: 1.75em; } }
 
+.intro h1 {
+  margin-bottom: 0.8em; }
+
+.intro h2 {
+  line-height: 1.2em; }
+
 @media screen and (min-width: 1024px) {
   .intro h1 {
     font-size: 3.157em; }
   .intro h2 {
-    font-size: 1.33em; } }
+    font-size: 1.33em;
+    line-height: 2.5em; } }
 
 h1 {
-  color: #59B3AA;
   font-size: 2.369em; }
 
 h2 {
+  color: #59B3AA;
   font-size: 1.777em; }
 
 h3 {
